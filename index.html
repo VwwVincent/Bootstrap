@@ -10,6 +10,12 @@
 
     <style>
 
+      body {
+        background-color: black;
+        color: rgb(175, 175, 175);
+
+      }
+
         .flex {
             display: flex;
             flex-wrap: wrap;
@@ -17,15 +23,28 @@
             gap: 1rem;
             
             
+            
+        }
+
+        .btn-close {
+
+  color: rgb(243, 243, 243);
+
+
+        }
+
+        .card {
+          background-color: #212529;
         }
 
         .card-body {
             padding: 0%;
+            background-color: black;
         }
         .cardHeader {
             font-weight: bold;
             margin-bottom: 0;
-            background-color: lightgray;
+            background-color: #212529;
             padding: 0.5rem;
         }
 
@@ -40,20 +59,11 @@
 
         }
 
-
-        .containerCarousel {
-            display: flex;          
-            max-width: 100vw;
-            max-height: 100vh;
-            
-            margin: auto;
-
-           
-
-  
-            
-
+        .modal-header {
+          border-bottom: 0px;
+          background-color: #212529;
         }
+
 
         .modal-header {
           padding: 5px;
@@ -62,10 +72,18 @@
         }
 
 
+
+        .carousel-inner img {
+          max-height: calc(100vh - 60px);
+        }
+
+        .modal-content {
+          background-color: black;
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><div class="spinner-grow spinner-grow-sm" role="status">
             <span class="visually-hidden">Loading...</span>
@@ -169,10 +187,6 @@
 
     </div>
   </div>
-</div>
-
-<div class="modal-dialog modal-dialog-centered">
-  ...
 </div>
 
 </body>
